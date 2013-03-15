@@ -6,6 +6,8 @@ public interface BookBuilder {
 	
 	public void writeContent();
 	
+	public void fixPrice();
+	
 	public Book getBook();
 
 }

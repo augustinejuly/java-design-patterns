@@ -1,7 +1,7 @@
 package org.pattern.builder;
 
 public class ScienceBookBuilder implements BookBuilder{
-	
+
 	private Book book;
 
 	public ScienceBookBuilder() {
@@ -19,6 +19,10 @@ public class ScienceBookBuilder implements BookBuilder{
 
 	public Book getBook() {
 		return book;
+	}
+
+	public void fixPrice() {
+		book.setPrice(120);
 	}
 
 }

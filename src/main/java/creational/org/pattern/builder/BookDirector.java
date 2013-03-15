@@ -11,6 +11,7 @@ public class BookDirector {
 	public void constructBook(){
 		bookBuilder.assignTitle();
 		bookBuilder.writeContent();
+		bookBuilder.fixPrice();
 	}
 	
 	public Book getBook() {

@@ -21,4 +21,8 @@ public class ComicBookBuilder implements BookBuilder{
 		return book;
 	}
 
+	public void fixPrice() {
+		book.setPrice(100);
+	}
+
 }
