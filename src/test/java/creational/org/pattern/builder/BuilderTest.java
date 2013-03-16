@@ -1,7 +1,6 @@
 package org.pattern.builder;
 
-import static org.junit.Assert.assertEquals;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 
@@ -9,14 +8,21 @@ public class BuilderTest {
 
 	@Test
 	public void testBuilderPattern() throws Exception {
-		BookBuilder builder = new ComicBookBuilder();
-		builder.assignTitle();
-		builder.writeContent();
-		assertEquals("Some Comic Title", builder.getBook().getTitle());
-		
-		builder = new ScienceBookBuilder();
-		builder.assignTitle();
-		builder.writeContent();
-		assertEquals("Some Scientific title", builder.getBook().getTitle());
+
+		MobilePhoneBuilder samsungMobileBuilder = new SamsungMobilePhoneBuilder();
+		MobilePhoneBuilder appleMobileBuilder = new AppleMobilePhoneBuilder();
+
+		PhoneManufacturer phoneManufacturer = new PhoneManufacturer(samsungMobileBuilder);
+		phoneManufacturer.constructMobilePhone();
+		MobilePhone samsungMobilePhone = phoneManufacturer.getMobilePhone();
+
+		//Assert that it is samsung mobile
+		Assert.assertTrue("Samsung SIII".equals(samsungMobilePhone.getModelName()));
+
+		phoneManufacturer = new PhoneManufacturer(appleMobileBuilder);
+		phoneManufacturer.constructMobilePhone();
+		MobilePhone appleMobilePhone = phoneManufacturer.getMobilePhone();
+		//Assert that it is an apple mobile
+		Assert.assertTrue("iPhone5".equals(appleMobilePhone.getModelName()));
 	}
 }
