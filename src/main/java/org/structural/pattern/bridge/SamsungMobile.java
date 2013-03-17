@@ -1,4 +1,4 @@
-package org.structural.bridge;
+package org.structural.pattern.bridge;
 
 // Refined Abstraction
 public class SamsungMobile extends AbstractMobilePhone{

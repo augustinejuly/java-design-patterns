@@ -1,7 +1,7 @@
-package org.structural.bridge;
+package org.structural.pattern.bridge;
 
 //Concrete Implementation
-public class RelianceSimCard  implements SimCard{
+public class AirtelSimCard implements SimCard{
 
 	@Override
 	public void callService() {
@@ -12,5 +12,4 @@ public class RelianceSimCard  implements SimCard{
 	public void smsService() {
 		// TODO :: sms service
 	}
-
 }

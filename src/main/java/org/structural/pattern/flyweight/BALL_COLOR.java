@@ -1,4 +1,4 @@
-package org.structural.flyweight;
+package org.structural.pattern.flyweight;
 
 public enum BALL_COLOR {
 	BLUE,

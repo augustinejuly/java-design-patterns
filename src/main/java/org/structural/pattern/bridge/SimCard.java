@@ -1,4 +1,4 @@
-package org.structural.bridge;
+package org.structural.pattern.bridge;
 
 //implementation interface
 public interface SimCard {

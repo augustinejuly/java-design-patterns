@@ -1,4 +1,4 @@
-package org.structural.bridge;
+package org.structural.pattern.bridge;
 
 //Abstraction
 public abstract class AbstractMobilePhone {

@@ -1,4 +1,4 @@
-package org.structural.facade;
+package org.structural.pattern.facade;
 
 
 public class SecondLevelValidation implements Validatable{

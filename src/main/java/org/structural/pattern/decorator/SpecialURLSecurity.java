@@ -1,4 +1,4 @@
-package org.structural.decorator;
+package org.structural.pattern.decorator;
 
 public class SpecialURLSecurity extends DefaultURLScanner implements URLRequest{
 
