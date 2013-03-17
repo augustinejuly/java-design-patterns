@@ -2,12 +2,12 @@ package org.creational.pattern.abstractfactory;
 
 import static org.junit.Assert.assertTrue;
 
-import org.creation.pattern.abstractfactory.AbstractCarFactory;
-import org.creation.pattern.abstractfactory.Car;
-import org.creation.pattern.abstractfactory.CarFactory;
-import org.creation.pattern.abstractfactory.CarType;
-import org.creation.pattern.abstractfactory.ChevroletBeat;
-import org.creation.pattern.abstractfactory.FordFigo;
+import org.creational.pattern.abstractfactory.AbstractCarFactory;
+import org.creational.pattern.abstractfactory.Car;
+import org.creational.pattern.abstractfactory.CarFactory;
+import org.creational.pattern.abstractfactory.CarType;
+import org.creational.pattern.abstractfactory.ChevroletBeat;
+import org.creational.pattern.abstractfactory.FordFigo;
 import org.junit.Test;
 
 public class AbstractFactoryTest {
