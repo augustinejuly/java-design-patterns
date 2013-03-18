@@ -25,9 +25,9 @@ public class MediatorTest {
 
 	@Test
 	public void testChatMediator() throws Exception {
-		assertTrue(memberA.sendMessage("B", "Hi B , Hello, How are you ?"));
-		assertTrue(memberB.sendMessage("C", "Hi C Hello, How are you ?"));
-		assertTrue(memberC.sendMessage("A", "Hi A Hello, How are you ?"));
+		assertTrue(memberA.sendMessage("B", "Hi B , How are you ?"));
+		assertTrue(memberB.sendMessage("C", "Hi C , How are you ?"));
+		assertTrue(memberC.sendMessage("A", "Hi A , How are you ?"));
 	}
 
 }
