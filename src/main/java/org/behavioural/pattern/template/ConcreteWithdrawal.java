@@ -1,6 +1,6 @@
 package org.behavioural.pattern.template;
 
-public class ConcreteWithdraw extends MoneyWithdrawalTemplate{
+public class ConcreteWithdrawal extends MoneyWithdrawalTemplate{
 
 	private long accountNumber;
 

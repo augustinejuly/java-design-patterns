@@ -6,13 +6,13 @@ public class TemplateTest {
 
 	@Test
 	public void testForSsuccessfulWithdrawal() throws Exception {
-		ConcreteWithdraw withdraw = new ConcreteWithdraw();
+		ConcreteWithdrawal withdraw = new ConcreteWithdrawal();
 		withdraw.withDrawMoney(100);
 	}
 
 	@Test(expected=RuntimeException.class)
 	public void testForFailureWithdrwal() throws Exception {
-		ConcreteWithdraw withdraw = new ConcreteWithdraw(){
+		ConcreteWithdrawal withdraw = new ConcreteWithdrawal(){
 			@Override
 			public boolean checkIfEnoughBalanceAvailable(long accountNumber) {
 				return false;
@@ -23,7 +23,7 @@ public class TemplateTest {
 
 	@Test(expected=IllegalArgumentException.class)
 	public void testForNgativeAmountWithdrawal() throws Exception {
-		ConcreteWithdraw withdraw = new ConcreteWithdraw();
+		ConcreteWithdrawal withdraw = new ConcreteWithdrawal();
 		withdraw.withDrawMoney(-100);
 	}
 
