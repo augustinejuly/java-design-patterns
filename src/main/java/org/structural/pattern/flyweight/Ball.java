@@ -5,7 +5,7 @@ public class Ball {
 	private int size;
 
 	private BALL_COLOR color;
-	
+
 	public static int ballCounter;
 
 	public Ball() {

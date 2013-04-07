@@ -8,6 +8,7 @@ public class SpecialURLSecurity extends DefaultURLScanner implements URLRequest{
 
 	@Override
 	public Object getValue(String url) throws SecurityException{
+		System.out.println("SpecialURLSecurity in progress");
 		additionalSecurityCheck(url);
 		return super.getValue(url);
 	}

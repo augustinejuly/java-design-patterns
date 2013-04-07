@@ -10,9 +10,10 @@ public class DefaultURLScanner  implements URLRequest{
 
 	@Override
 	public Object getValue(String url)throws SecurityException{
+		System.out.println("DefaultURLScanner in progress");
 		// scan the url
 		String tempURL = url.toLowerCase();
-		if(tempURL.contains("javascript")){
+		if(tempURL.contains("script")){
 			throw new SecurityException("Not a valid URL");
 		}
 		return this.urlRequest.getValue(url);

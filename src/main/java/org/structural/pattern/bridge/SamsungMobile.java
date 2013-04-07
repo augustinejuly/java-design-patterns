@@ -19,4 +19,9 @@ public class SamsungMobile extends AbstractMobilePhone{
 		simCard.smsService();
 	}
 
+	@Override
+	public void setSimCard(SimCard simCard) {
+		this.simCard = simCard;
+	}
+
 }

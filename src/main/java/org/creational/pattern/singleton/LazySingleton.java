@@ -1,16 +1,19 @@
 package org.creational.pattern.singleton;
 
 public class LazySingleton {
-	
+
 	private static LazySingleton lazySingleton;
-	
-	private LazySingleton() {		
+
+	private LazySingleton() {
 	}
-	
+
 	public static LazySingleton getInstance() {
-		synchronized (LazySingleton.class) {
-			if(lazySingleton == null){
-				lazySingleton = new LazySingleton();
+		//Double-checked locking to ensure thread safe
+		if(lazySingleton == null){
+			synchronized (LazySingleton.class) {
+				if(lazySingleton == null){
+					lazySingleton = new LazySingleton();
+				}
 			}
 		}
 		return lazySingleton;

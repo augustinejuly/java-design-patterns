@@ -8,9 +8,10 @@ public class Manager implements Component{
 	List<Component> employees = new ArrayList<Component>();
 
 	@Override
-	public void receiveNotification() {
+	public void receiveNotification(String notification) {
+		System.out.println("Manager Received Notification :: "+ notification);
 		for (Component component : employees) {
-			component.receiveNotification();
+			component.receiveNotification(notification);
 		}
 	}
 

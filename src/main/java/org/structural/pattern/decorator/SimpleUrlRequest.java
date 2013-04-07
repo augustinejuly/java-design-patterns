@@ -4,7 +4,9 @@ public class SimpleUrlRequest implements URLRequest{
 
 	@Override
 	public Object getValue(String url) throws SecurityException {
-		return "retrun some output after processing";
+		System.out.println("SimpleUrlRequest in progress");
+		//retrun some output after processing
+		return url;
 	}
 
 }

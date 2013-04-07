@@ -2,5 +2,6 @@ package org.structural.pattern.composite;
 
 public interface Component {
 
-	public void receiveNotification();
+	public void receiveNotification(String notification);
+
 }
