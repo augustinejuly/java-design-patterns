@@ -10,17 +10,17 @@ public class EarthWeightConvertionVisitor  implements PlanetVisitor<Float>{
 
 	@Override
 	public Float visit(Mercury mercury) {
-		return weightOnEarth * 0.378f;
+		return mercury.convertEarthWeight(weightOnEarth);
 	}
 
 	@Override
 	public Float visit(Mars mars) {
-		return weightOnEarth * 0.377f;
+		return mars.convertEarthWeight(weightOnEarth);
 	}
 
 	@Override
 	public Float visit(Uranus uranus) {
-		return weightOnEarth * 0.889f;
+		return uranus.convertEarthWeight(weightOnEarth);
 	}
 
 }
