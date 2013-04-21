@@ -20,9 +20,7 @@ public class StockMarket {
 
 	public void setCurrentPrice(double currentPrice) {
 		this.currentPrice = currentPrice;
-		for (StockMarketObserver marketObserver : stcokMarketObservers) {
-			marketObserver.latestStockMarketPrice(currentPrice);
-		}
+		notifyAllObservers();
 	}
 
 	public void addStockMarketObserver(StockMarketObserver stockMarketObserver){
